@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <title>Note Taker</title>
+
+
+  <style>
+    .positive {
+      border-left:5px solid green;
+    }
+
+    .negative {
+      border-left: 4px solid red;
+    }
+
+    #li-grp {
+      display: flex;
+      list-style-type: none;
+    }
+
+    .btn {
+      margin-left: auto;
+    }
+
+    #time-id {
+      margin-top: 0.7rem;
+      margin-left: 1rem;
+
+    }
+     </style>
+</head>
+
+
+
+
+<body>
+  <header id="main-header" class="bg-success text-white p-4 mb-3">
+    <div class="text-center">
+      <h1>Note Taker</h1>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <form id="form">
+      <div id="text" class="form-row">
+        <div class="col">
+          <label>Task Name :</label>
+          <input type="text" id="text-input"  class="text-1" placeholder="Name of the Task..." required>
+
+        </div>
+
+        <div class="col">
+          <label>Time :</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="col">
+          <input type="checkbox" id="check" required> Is Completed
+        </div>
+      </div><br />
+      <div class="text-center">
+        <input type="submit" id="sub-btn" value="submit" class="btn btn-primary my-5">
+      </div>
+
+    </form>
+    </br>
+
+    <h1>Task :</h1>
+    <div class="card">
+      <div class="card-body">
+        <ul id="ul-id" class="list-group-item">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
